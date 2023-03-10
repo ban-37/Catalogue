@@ -1,0 +1,104 @@
+{
+	"entryPagePath":"pages/find/find",
+	"easycom": {
+	  "autoscan": true,
+	  "custom": {
+	    "^uni-(.*)": "@/components/uni-$1.vue", // 匹配components目录内的vue文件
+	    "^vue-file-(.*)": "packageName/path/to/vue-file-$1.vue" // 匹配node_modules内的vue文件
+	  }
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},{
+			"path": "pages/find/find",
+			"style": {
+				"navigationBarTitleText": " ",
+				"enablePullDownRefresh": true
+			}
+		},{
+			"path": "pages/community/community",
+			"style": {
+				"navigationBarTitleText": "社区"
+			}
+		},{
+			"path": "pages/program/program",
+			"style": {
+				"navigationBarTitleText": "电台"
+			}
+		},{
+			"path": "pages/like/like",
+			"style": {
+				"navigationBarTitleText": "u关注"
+			}
+		}
+	    ,{
+            "path" : "pages/play/play",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"onReachBottomDistance" :1
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			
+			{
+				"pagePath": "pages/find/find",
+				"iconPath": "static/tabbar/faxian.png",
+				"selectedIconPath": "static/tabbar/faxian1.png",
+				"text": "发现"
+			},
+			{
+				"pagePath": "pages/program/program",
+				"iconPath": "static/tabbar/jita.png",
+				"selectedIconPath": "static/tabbar/jita1.png",
+				"text": "电台"
+			},
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/wode.png",
+				"selectedIconPath": "static/tabbar/wode1.png",
+				"text": "我的"
+			}, 
+			{
+				"pagePath": "pages/community/community",
+				"iconPath": "static/tabbar/xiaoxi.png",
+				"selectedIconPath": "static/tabbar/xiaoxi1.png",
+				"text": "社区"
+			}, 
+			{
+				"pagePath": "pages/like/like",
+				"iconPath": "static/tabbar/remen.png",
+				"selectedIconPath": "static/tabbar/remen1.png",
+				"text": "关注"
+			}
+			]
+		}
+}
